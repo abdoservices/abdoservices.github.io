@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web Storage</title>
+    <style>
+        /* Background Styles Only */
+
+        @import url('https://fonts.googleapis.com/css?family=Raleway');
+
+        * {
+            font-family: Raleway;
+        }
+
+        html {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #DFDFDF;
+        }
+
+        .side-links {
+            position: absolute;
+            top: 1em;
+            right: 1em;
+        }
+
+        .side-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            margin-bottom: 10px;
+            color: white;
+            width: 180px;
+            padding: 10px 0;
+            border-radius: 10px;
+        }
+
+        .side-link-youtube {
+            background-color: red;
+        }
+
+        .side-link-twitter {
+            background-color: #1DA1F2;
+        }
+
+        .side-link-github {
+            background-color: #6e5494;
+        }
+
+        .side-link-text {
+            margin-left: 10px;
+            font-size: 18px;
+        }
+
+        .side-link-icon {
+            color: white;
+            font-size: 30px;
+        }
+
+        #translation {
+            transform: translate(-3em, 0em);
+        }
+
+        .checkboxes {
+            flex: 0 0 24px;
+        }
+
+        .checkbox {
+            --padding: .9em;
+            background: transparent;
+            display: block;
+            height: 1em;
+            left: -1em;
+            padding-inline-start: var(--padding);
+            position: absolute;
+            right: 0;
+            top: -.5em;
+            width: 1em;
+        }
+
+        .checkbox::after {
+            border: 1px solid white;
+            border-radius: 2px;
+            content: '';
+            height: 1em;
+            position: absolute;
+            top: var(--padding);
+            left: var(--padding);
+            width: 1em;
+        }
+
+        .checkbox::before {
+            background: transparent;
+            border: 2px solid white;
+            border-right-width: 0;
+            border-top-width: 0;
+            content: '';
+            height: .2em;
+            left: calc(.3em + var(--padding));
+            opacity: 0;
+            position: absolute;
+            top: calc(.3em + var(--padding));
+            transform: rotate(-45deg);
+            width: .5em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="translation">
+        <form action="results.html" method="GET" enctype="multipart/form-data">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div>
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age" min="1" max="200" step="1">
+            </div>
+            <div>
+                <label for="date">Birthdate</label>
+                <input type="date" name="date" id="date">
+            </div>
+            <div>
+                Favorite Food
+                <div>
+                    <label for="banana">Banana</label>
+                    <input type="checkbox" name="banana" id="banana">
+                </div>
+                <div>
+                    <label for="apple">Apple</label>
+                    <input type="checkbox" name="apple" id="apple">
+                </div>
+            </div>
+            <div>
+                Gender
+                <div>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="male">
+                </div>
+                <div>
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                </div>
+            </div>
+            <div>
+                <label for="eyeColor">Eye Color</label>
+                <select name="eyeColor" id="eyeColor" multiple>
+                    <option value="Green">Green</option>
+                    <option label="Red" value="Red"></option>
+                </select>
+            </div>
+            <div>
+                <label for="bio">Bio</label>
+                <textarea id="bio" name="bio"></textarea>
+            </div>
+            <input type="hidden" name="hidden" value="hi">
+            <div>
+                <label for="file">File</label>
+                <input id="file" type="file" name="file" accept="audio/*,video/*,image/*">
+            </div>
+            <div>
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone">
+            </div>
+            <div>
+                <label for="url">URL</label>
+                <input type="url" name="url" id="url">
+            </div>
+            <div>
+                <label for="color">Color</label>
+                <input type="color" name="color" id="color">
+            </div>
+            <div>
+                <label>
+                    Password
+                    <input type="password" name="password" required>
+                </label>
+            </div>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Side Links Only -->
+    <div class="side-links">
+        <a href="https://youtu.be/fNcJuPIZ2WE" target="_blank" class="side-link side-link-youtube">
+            <i class="fab fa-youtube-square side-link-icon"></i>
+            <span class="side-link-text">View Tutorial</span>
+        </a>
+        <a href="https://github.com/WebDevSimplified" target="_blank" class="side-link side-link-github side-link-icon">
+            <i class="fab fa-github-square"></i>
+            <span class="side-link-text">View GitHub</span>
+        </a>
+        <a href="https://twitter.com/DevSimplified" target="_blank" class="side-link side-link-twitter">
+            <i class="fab fa-twitter-square side-link-icon"></i>
+            <span class="side-link-text">View Twitter</span>
+        </a>
+    </div>
+
+</body>
+
+</html>
