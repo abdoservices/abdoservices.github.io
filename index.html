@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Portfolio Website Template</title>
+</head>
+<style type="text/css">
+	* {
+		padding: 0;
+		margin: 0;
+		overflow: hidden;
+	}
+
+	body {
+		background-color: black;
+
+	}
+
+	.container-fluide {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		left: 1.5em;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.container-fluid {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		left: 13.5em;
+		background-position-x: 300px;
+		background: url(png.png);
+		background-color: rgba(0, 0, 0, );
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.container {
+		width: 1200px;
+		height: 80px;
+		margin: auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0px 20px;
+	}
+
+	.container h2 {
+		font-family: arial;
+		color: #fff;
+		cursor: pointer;
+		font-size: 30px;
+	}
+
+	.container ul {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.container ul li {
+		list-style: none;
+		color: #fff;
+		font-weight: bold;
+		font-family: arial;
+		margin-right: 30px;
+		cursor: pointer;
+		transition: 0.5s;
+	}
+
+	.container ul li:first-child {
+		color: #e9204f;
+	}
+
+	.container ul li:hover {
+		color: #e9204f;
+	}
+
+	.container .btn {
+		width: 14em;
+		height: 3em;
+		border-radius: 10px;
+		border: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #e9204f;
+		font-size: 1.1em;
+		font-weight: bold;
+		transition: 0.5s;
+	}
+
+	.container .btn:hover {
+		background-color: #e9204f;
+		color: #fff;
+	}
+
+	.content {
+		width: 120em;
+		height: 100em;
+		margin: auto;
+	}
+
+	.content h4 {
+		font-family: arial;
+		font-size: 20px;
+		padding-top: 150px;
+		color: #fff;
+	}
+
+	.content h1 {
+		font-family: arial;
+		font-size: 80px;
+		padding-top: 20px;
+		color: #fff;
+	}
+
+	.content h3 {
+		color: lightgrey;
+		font-family: arial;
+		font-weight: bold;
+		line-height: 30px;
+		padding-top: 30px;
+	}
+
+	.content .btn {
+		width: 200px;
+		height: 50px;
+		border-radius: 10px;
+		border: 2px solid #e9204f;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #fff;
+		font-size: 17px;
+		font-weight: bold;
+		transition: 0.5s;
+		background-color: #e9204f;
+		margin-top: 50px;
+	}
+
+	.content .btn:hover {
+		background-color: #fff;
+		border: 2px solid #fff;
+		color: #e9204f;
+		cursor: pointer;
+	}
+</style>
+
+<body>
+	<div class="container-fluide">
+		<div class="container-fluid"></div>
+		<div class="container">
+			<img src="logo.png">
+			<ul>
+				<li>HOME</li>
+				<li>ABOUT</li>
+				<li>SERVICE</li>
+				<li>BLOG</li>
+				<li>PRIVACY</li>
+			</ul>
+			<button class="btn">
+				<ion-icon name="call-outline"></ion-icon>(+323)254-554
+			</button>
+		</div>
+		<div class="content">
+			<h4>Hello ______ I am</h4>
+			<h1>Source Coder</h1>
+			<h3>UI/UX Designer - Developer - Marketing</h3>
+			<button class="btn">Read More</button>
+			<p>Our Location: 253 Admans, Paris</p>
+		</div>
+
+	</div>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	</div>
+	</div>
+</body>
+
+</html>
