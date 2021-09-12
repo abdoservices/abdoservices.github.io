@@ -58,6 +58,13 @@ section{
     letter-spacing: .2rem;
 }
 
+.abdo {
+    background-image: url("img-7.png");
+    background-position: 70%;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
 header{
     position: fixed;
     top:0; left:0; bottom:0;
@@ -96,12 +103,6 @@ header .navbar a{
 header .navbar a:hover{
     letter-spacing: .2rem;
     color:var(--main-color);
-}
-header a div .abdo {
-    background-image: url(img-7.png);
-    background-position: 70%;
-    background-size: 70%;
-    background-repeat: no-repeat;
 }
 
 header .follow a{
