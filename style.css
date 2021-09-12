@@ -77,12 +77,7 @@ header{
     width:30rem;
     text-align: center;
 }
-div:nth-child(4) {
-    background-image: url("img-7.png");
-    background-position: 70%;
-    background-size: 70%;
-    background-repeat: no-repeat;
-}
+
 header .logo{
     text-transform: uppercase;
     color:rgba(255, 255, 255, 0);
