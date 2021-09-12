@@ -78,10 +78,7 @@ header .logo{
     font-size: 6rem;
     font-weight: bolder;
 }
-header div .logoabdo {
-    background-image: url(/images/img-7.png);
 
-}
 
 
 header .logo span{
@@ -101,7 +98,7 @@ header .navbar a:hover{
     color:var(--main-color);
 }
 header a div .abdo {
-    background-image: url(/images/img-7.png);
+    background-image: url(img-7.png);
     background-position: 70%;
     background-size: 70%;
     background-repeat: no-repeat;
