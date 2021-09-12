@@ -82,6 +82,12 @@ header div .logoabdo {
     background-image: url(/images/img-7.png);
 
 }
+header a div .abdo {
+    background-image: url(/images/img-7.png);
+    background-position: 70%;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
 
 header .logo span{
     text-transform: uppercase;
